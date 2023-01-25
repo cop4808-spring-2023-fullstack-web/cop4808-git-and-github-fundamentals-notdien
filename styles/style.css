@@ -3,6 +3,10 @@ html {
     font-family: monospace;
 }
 
+body {
+    background-color: azure;
+}
+
 #calc {
     display: flex;
     min-height: 95vh;

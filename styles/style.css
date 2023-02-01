@@ -24,7 +24,7 @@ body {
     border-radius: 4px;
     display: grid;
     grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+    grid-template-rows: minmax(150px, auto) repeat(5, 80px);
     gap: 2px;
 }
 
@@ -56,6 +56,42 @@ button {
 #zero {
     grid-column: span 2;
 }
+
+/* THESE ARE MY NEW BUTTONS */
+
+.pi {
+    background-color: #217C7E;
+}
+
+.pi:active {
+    background-color: #33b9bb;
+}
+
+.e {
+    background-color: #217C7E;
+}
+
+.e:active {
+    background-color: #33b9bb;
+}
+
+.square {
+    background-color: dodgerblue;
+}
+
+.square:active {
+    background-color: rgb(123, 189, 255);
+}
+
+.cube {
+    background-color: dodgerblue;
+}
+
+.cube:active {
+    background-color: rgb(123, 189, 255);
+}
+
+/* */
 
 .operator {
     background-color: #FF8F1F;    

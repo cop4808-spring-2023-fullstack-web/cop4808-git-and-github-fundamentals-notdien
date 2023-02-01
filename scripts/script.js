@@ -27,7 +27,15 @@ function clickButton() {
             if(buttons[i].classList.contains('operand')) {
                 inputOperand(buttons[i].value);
                 updateDisplay();
-            } else if(buttons[i].classList.contains('operator')) {
+            }
+            // added 'pi' and 'e' as numbers to be used
+            else if(buttons[i].classList.contains('pi')) {
+                inputOperand(buttons[i].value);
+            }
+            else if (buttons[i].classList.contains('e')) {
+                inputOperand(buttons[i].value);
+            }
+            else if(buttons[i].classList.contains('operator')) {
                 inputOperator(buttons[i].value);
             } else if(buttons[i].classList.contains('equals')) {
                 inputEquals();
@@ -41,7 +49,7 @@ function clickButton() {
             } else if(buttons[i].classList.contains('sign')) {
                 inputSign(displayValue);
                 updateDisplay();
-            } else if(buttons[i].classList.contains('clear'))
+            } else if(buttons[i].classList.contains('clear')) 
                 clearDisplay();
                 updateDisplay();
         }

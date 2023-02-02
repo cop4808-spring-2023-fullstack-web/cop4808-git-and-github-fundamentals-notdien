@@ -1,4 +1,9 @@
 Dien Tran
+
+# New functions for calculator app!
+![]
+(https://github.com/cop4808-spring-2023-fullstack-web/cop4808-git-and-github-fundamentals-notdien/blob/main/gif.gif)
+
 # :wave: The Basics of GitHub 
 
 ## 🤓 Course overview and learning outcomes 

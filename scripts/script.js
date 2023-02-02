@@ -30,11 +30,16 @@ function clickButton() {
             }
             // added 'pi' and 'e' as numbers to be used
             else if(buttons[i].classList.contains('pi')) {
+                displayValue = '0';
                 inputOperand(buttons[i].value);
             }
             else if (buttons[i].classList.contains('e')) {
+                displayValue = '0';
                 inputOperand(buttons[i].value);
             }
+
+            // END OF MY NUMBERS
+
             else if(buttons[i].classList.contains('operator')) {
                 inputOperator(buttons[i].value);
             } else if(buttons[i].classList.contains('equals')) {
@@ -46,7 +51,20 @@ function clickButton() {
             } else if(buttons[i].classList.contains('percent')) {
                 inputPercent(displayValue);
                 updateDisplay();
-            } else if(buttons[i].classList.contains('sign')) {
+            } 
+            // ADDED SQUARE AND CUBE FUNCTION
+            else if (buttons[i].classList.contains('square')) {
+                inputSquare(displayValue);
+                updateDisplay();
+            }
+            else if (buttons[i].classList.contains('cube')) {
+                inputCube(displayValue);
+                updateDisplay();
+            }
+
+            // END OF MY FUNCTION
+
+            else if(buttons[i].classList.contains('sign')) {
                 inputSign(displayValue);
                 updateDisplay();
             } else if(buttons[i].classList.contains('clear')) 
@@ -150,6 +168,18 @@ function inputDecimal(dot) {
 function inputPercent(num) {
     displayValue = (num/100).toString();
 }
+
+// adding square function
+function inputSquare(num) {
+    displayValue = (num*num).toString();
+}
+
+// adding cubed function
+function inputCube(num) {
+    displayValue = (num*num*num).toString();
+}
+
+// end of my functions
 
 function inputSign(num) {
     displayValue = (num * -1).toString();
